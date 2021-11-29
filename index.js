@@ -186,11 +186,24 @@ console.log(checkPoNeNum(2,-4))
 /* 16. Create a function to create and return a new string where the first 3 characters and in lower case and the others are in upper case. 
     If the string's length is less than 3, convert the whole string into uppercase. Pass the original string as a parameter. */
 
+    const caseChanger = function(str){
+        if(str.length>3){
+            return str.slice(0,3).toLowerCase() + str.slice(4,arr.length-1).toUpperCase()
+        }
+        else return str.toUpperCase()
+    }
+console.log(caseChanger('pineapple'))
 
 /* 17. Create a function to calculate the sum of two integers (passed as parameters). 
     If the sum is in the 50-80 range, return `65`, otherwise, return `80`. */
-
-
+const numChecker = function(num1,num2){
+    let sum = num1 + num2 
+    if(sum > 50 && sum < 80 )
+    return 65
+    else
+    return 80
+}
+console.log(numChecker(20,45))
 /* 18. Create a function to convert a number (passed as a parameter) into a string, basing yourself on this example: 
     The number has 3 as a factor â‡’ return `Diego`
     The number has 5 as a factor â‡’ return `Riccardo`
@@ -199,7 +212,20 @@ console.log(checkPoNeNum(2,-4))
     âš ï¸ The factor is an integer which evenly divides a number without leaving a remainder. One number can have more than one factor, in that case you should return both names. 
 Ex. 15 has both 3 and 5 has factors: the function will return `DiegoRiccardo` */
 
+const strConverter = function(str){
+    if()
+}
 
 /* 19. Create a function that that takes a phrase as a parameter and returns its acronym.
 Ex. British Broadcasting Corporation returns `BBC` */
 
+const getAcronym = function(str){
+   let acronym =""
+    let words = str.split(" ")
+    for(let i = 0; i < words.length; i++){
+        acronym += words[i].slice(0,1)
+    }
+    return acronym
+}
+
+console.log(getAcronym("World Wide Hello Servie"))
