@@ -69,8 +69,20 @@ console.log(cityNameChecker("New York"))
 
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
     Pass the array as a parameter. */
+const sumArray = function(arr){
+    let sum = 0
+    if(Array.isArray(arr)){
 
+        for(let i = 0; i < arr.length ; i++){
+            sum +=arr[i]
+        }
+        return sum
+    } else 
+        return "is not an array"
+}
 
+let arr = [3, 5, 7]
+console.log(sumArray(arr))
 /* 9. Create a function to test if an array of lenght 2 contains 1 OR 3. 
     Return `true` is it does, `false` if it doesn't. */
 
