@@ -86,19 +86,31 @@ console.log(sumArray(arr))
 /* 9. Create a function to test if an array of lenght 2 contains 1 OR 3. 
     Return `true` is it does, `false` if it doesn't. */
 const checkArrElement = function(arr){
+    let count = 0
     for(let i= 0; i<arr.length; i++){
         if(arr[i] === 1 || arr[i] === 3){
-            return true
+            count++
         }
-     
     }
+    return count>0? true:false
+
 }
-arr = [3,4]
+arr = [3,1]
 console.log(checkArrElement(arr))
     
 /* 10. Create a function to test if an array of lenght 2 DOES NOT contain 1 or 3. 
     Return `true` if it doesn't, `false` if it does. */ 
-
+    const checkArrElement = function(arr){
+        let conditionMeet = arr.length
+        for(let i= 0; i<arr.length; i++){
+            if(arr[i] !== 1 && arr[i] !== 3){
+                conditionMeet--
+            }
+        }
+        return conditionMeet===0? true:false
+    }
+    arr = [1,3]
+    console.log(checkArrElement(arr))
 
 /* 11. Create a function to find the longest string from a given array of strings. 
     Pass the array as parameter and return the longest string. */ 
