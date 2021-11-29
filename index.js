@@ -85,8 +85,17 @@ let arr = [3, 5, 7]
 console.log(sumArray(arr))
 /* 9. Create a function to test if an array of lenght 2 contains 1 OR 3. 
     Return `true` is it does, `false` if it doesn't. */
-
-
+const checkArrElement = function(arr){
+    for(let i= 0; i<arr.length; i++){
+        if(arr[i] === 1 || arr[i] === 3){
+            return true
+        }
+     
+    }
+}
+arr = [3,4]
+console.log(checkArrElement(arr))
+    
 /* 10. Create a function to test if an array of lenght 2 DOES NOT contain 1 or 3. 
     Return `true` if it doesn't, `false` if it does. */ 
 
