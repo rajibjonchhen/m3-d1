@@ -1,21 +1,17 @@
-/* 1. Create a function to calculate the sum of the two given integers. If the two values are the same, return triple their sum. */
+
+// /* 1. Create a function to calculate the sum of the two given integers. If the two values are the same, return triple their sum. *
+
+const sum = function(num1, num2){
+    result = num1 + num2;
+    if(num1 === num2 ){
+        result = result*3
+    }
+    console.log(result)
+}
+sum()
 
 
-/* 2. Create a function to check two given integers. Return `true` if one of them is 50 or if their sum is 50. */
-
-
-/* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
-
-
-/* 4. Create a function to find and return the largest of three given integers. */
-
-
-/* 5. Create a function to check if two numbers are in the range 40-60 or 70-100. 
-    Return `true` if they do, return `false` if one (or both) don't. */
-
-
-/* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
-    Pass the string and the number of copies as parameters. */
+// /* 2. Create a function to check two given integers. Return `true` if one of them is 50 or if their sum is 50. */
 
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
@@ -77,3 +73,4 @@ Ex. 15 has both 3 and 5 has factors: the function will return `DiegoRiccardo` */
 
 /* 19. Create a function that that takes a phrase as a parameter and returns its acronym.
 Ex. British Broadcasting Corporation returns `BBC` */
+
