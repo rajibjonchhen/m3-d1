@@ -143,17 +143,46 @@ const angleType = function(angle){
     else 
     return ' wrong entry'
 }
+console.log(angleType(50))
 
 /* 13. Create a function to find and return the index of the greatest element of a given array of integers that you passed as a parameter. */
-
-
+const findIndex = function(arr){
+    let temp = 0
+    let index
+    for(let i = 0; i < arr.length; i++){
+        if( temp < arr[i]){
+            temp = arr[i]
+            index = i
+        }
+    }
+    return index
+}
+arr = [2,44,555,332,55,33,224,5,6,6,4,323,35,34,34]
+console.log(findIndex(arr))
 /* 14. Create a function to find and return the largest **even** number from an array of integers that is passed a parameter. */
+const largestEven = function(arr){
+    let result = 0;
+    for(let i = 0; i<arr.length; i++){
+        if(arr[i]%2 === 0){
+            if(arr[i]> result){
+                result = arr[i]
+            }
+        }
+    }
+    return result
+}
 
+console.log(largestEven(arr))
 
 /* 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative. 
     Return `true` if that's the case, return `false` if it's not. */
-
-
+const checkPoNeNum = function(num1, num2){
+    if((num1 > 0 && num2 < 0) || (num1 < 0 && num2 > 0)){
+        return true
+    }
+    else return false
+}
+console.log(checkPoNeNum(2,-4))
 /* 16. Create a function to create and return a new string where the first 3 characters and in lower case and the others are in upper case. 
     If the string's length is less than 3, convert the whole string into uppercase. Pass the original string as a parameter. */
 
