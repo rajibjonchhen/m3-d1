@@ -114,8 +114,15 @@ console.log(checkArrElement(arr))
 
 /* 11. Create a function to find the longest string from a given array of strings. 
     Pass the array as parameter and return the longest string. */ 
-
-
+const longestString = function(arr){
+    let longestStr = ""
+    for(let i = 0; i < arr.length; i++){
+        longestStr = longestStr.length>arr[i].length? longestStr:arr[i]
+    }
+    return longestStr
+}
+arr = ['apple','baby','lisbon','berloin','hamburger']
+console.log(longestString(arr))
 /* 12. Create a function to find the types of a given angle:
   1. Acute angle â‡’ between 0 and 90 degrees. Return `acute`.
     2. Right angle â‡’ 90 degree. Return `right`
