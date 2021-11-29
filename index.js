@@ -57,7 +57,15 @@ const strPaster = function(str, times){
 strPaster("apple",3)
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
-
+const cityNameChecker = function(cityName){
+    // let splittedCityName = cityName.split("")
+    let cityPrefix = cityName.slice(0,3)
+    if(cityPrefix.toUpperCase() === "LOS" || cityPrefix.toUpperCase() === "NEW")
+    return cityName
+    else 
+    return false
+}
+console.log(cityNameChecker("New York"))
 
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
     Pass the array as a parameter. */
