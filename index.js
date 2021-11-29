@@ -21,6 +21,13 @@ const check50 = function(num1,num2){
 check50()
 
 // /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
+const strRemover = function(position,str){
+       let splittedStr = str.split("")
+       splittedStr.splice(position-1,1)
+     return splittedStr.join("")
+}
+strRemover(1,"apple")
+/* 4. Create a function to find and return the largest of three given integers. */
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
