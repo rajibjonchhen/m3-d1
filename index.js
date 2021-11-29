@@ -28,6 +28,14 @@ const strRemover = function(position,str){
 }
 strRemover(1,"apple")
 /* 4. Create a function to find and return the largest of three given integers. */
+const findBig = function(num1,num2,num3){
+    let big = num1 > num2? (num1>num3? num1:num3):(num2>num3? num2:num3);
+    console.log(big)
+    return
+}
+findBig(31,51,7)
+/* 5. Create a function to check if two numbers are in the range 40-60 or 70-100. 
+    Return `true` if they do, return `false` if one (or both) don't. */
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
