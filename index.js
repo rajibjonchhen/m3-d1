@@ -212,9 +212,27 @@ console.log(numChecker(20,45))
     âš ï¸ The factor is an integer which evenly divides a number without leaving a remainder. One number can have more than one factor, in that case you should return both names. 
 Ex. 15 has both 3 and 5 has factors: the function will return `DiegoRiccardo` */
 
-const strConverter = function(str){
-    if()
+ const strConverter = function(num){
+    let str = ''
+    switch(0){
+        case (num%3):
+           console.log( 'Diego') 
+           case(num%5):
+           console.log( 'Ricardo') 
+        case(num%7):
+            console.log('Stefano')
+        default:
+         return num
+         break;
+    } 
+    return str
+
 }
+console.log(strConverter(35))
+
+
+
+
 
 /* 19. Create a function that that takes a phrase as a parameter and returns its acronym.
 Ex. British Broadcasting Corporation returns `BBC` */
