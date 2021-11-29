@@ -45,7 +45,16 @@ findBig(31,51,7)
 rangeChecker(50,60)
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
     Pass the string and the number of copies as parameters. */
+const strPaster = function(str, times){
+   let newStr=""
+    for(let i = 0; i <times; i++){
+        newStr += str
+    }
 
+    console.log(newStr)
+}
+
+strPaster("apple",3)
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
 
