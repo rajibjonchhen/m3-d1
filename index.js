@@ -13,6 +13,14 @@ sum()
 
 // /* 2. Create a function to check two given integers. Return `true` if one of them is 50 or if their sum is 50. */
 
+const check50 = function(num1,num2){
+    let sum = num1 + num2;
+    if(num1 == 50 || num2 == 50 || sum == 50)
+    return true
+}
+check50()
+
+// /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
